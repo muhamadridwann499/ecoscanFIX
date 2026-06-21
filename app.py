@@ -48,7 +48,7 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 # ── Database ──────────────────────────────────────────────────────────────────
 DB_CONFIG = {
-    "host":     os.environ.get("MYSQLHOST",     "hopper.proxy.rlwy.net"),
+    "host":     os.environ.get("MYSQLHOST",     "mysql.railway.internal"),
     "port":     int(os.environ.get("MYSQLPORT", 3306)),
     "user":     os.environ.get("MYSQLUSER",     "root"),
     "password": os.environ.get("MYSQLPASSWORD", "ATOboqjodFGrJurGqAkmBUtLKyYsdCvZ"),
