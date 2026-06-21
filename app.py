@@ -48,11 +48,11 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 # ── Database ──────────────────────────────────────────────────────────────────
 DB_CONFIG = {
-    "host":     os.environ.get("MYSQLHOST",     "mysql.railway.internal"),
-    "port":     int(os.environ.get("MYSQLPORT", 3306)),
-    "user":     os.environ.get("MYSQLUSER",     "root"),
-    "password": os.environ.get("MYSQLPASSWORD", "ATOboqjodFGrJurGqAkmBUtLKyYsdCvZ"),
-    "database": os.environ.get("MYSQLDATABASE", "railway"),
+    "host":     "mysql.railway.internal",
+    "port":     3306,
+    "user":     "root",
+    "password": "ATOboqjodFGrJurGqAkmBUtLKyYsdCvZ",
+    "database": "railway",
 }
 
 def get_db():
